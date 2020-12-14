@@ -1,0 +1,23 @@
+@{
+    ViewData["Title"] = "Numbers";
+}
+
+@{
+    Random rand = new Random();
+    int One = rand.Next(100);
+    int Two = rand.Next(100);
+    int Three = rand.Next(100);
+
+    List<int> NumbList = new List<int>();
+    NumbList.Add(One);
+    NumbList.Add(Two);
+    NumbList.Add(Three);
+}
+
+<div class="justify-content-center d-flex flex-column align-items-center">
+    <h1>Here are three randomly generated numbers!</h1>
+    @foreach (var item in NumbList)
+    {
+        <h2>@item.ToString()</h2>
+    }
+</div>

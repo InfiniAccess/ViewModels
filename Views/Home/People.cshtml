@@ -1,0 +1,14 @@
+@model User
+
+@{
+    ViewData["Title"] = "People";
+}
+
+<div class="card col-6 mx-auto">
+    <div class="card-body">
+        <h1 class="card-title">Person</h1>
+        <p class="card-text">First Name: @Model.FirstName</p>
+        <p class="card-text">Last Name: @Model.LastName</p>
+    </div>
+
+</div>
